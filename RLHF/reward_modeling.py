@@ -182,7 +182,7 @@ training_args = TrainingArguments(
 )
 # Load the value-head model and tokenizer.
 tokenizer_name = script_args.tokenizer_name if script_args.tokenizer_name is not None else script_args.model_name
-tokenizer = AutoTokenizer.from_pretrained(tokenizer_name, use_auth_token=True,trust_remote_code=True)
+tokenizer = AutoTokenizer.from_pretrained(tokenizer_name, trust_remote_code=True)
 tokenizer.pad_token = tokenizer.eos_token
 
 

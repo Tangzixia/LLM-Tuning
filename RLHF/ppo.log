@@ -1,0 +1,17 @@
+nohup: ignoring input
+Loading base model for ppo training...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:00<00:01,  1.27it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:02<00:01,  1.04s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:02<00:00,  1.26it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:02<00:00,  1.19it/s]
+WARNING:root:A <class 'transformers_modules.baichuan-inc.baichuan-7B.5d86e56a58fe4a5b3292cd9bb7468afef6f93eab.modeling_baichuan.BaiChuanForCausalLM'> model is loaded from '../weights/ckps/baichaun-sft-hc3-merged', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+wandb: Currently logged in as: ks2337768320qq. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.16.6
+wandb: Run data is saved locally in /scratch/AzureNfsServer_INPUT1/scratch/singularity_webdata_ws01_eastus2_nfs/shuaikang/Code/tmp/LLM-Tuning/RLHF/wandb/run-20240423_050450-qussbiht
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run sunny-grass-2
+wandb: ⭐️ View project at https://wandb.ai/ks2337768320qq/trl
+wandb: 🚀 View run at https://wandb.ai/ks2337768320qq/trl/runs/qussbiht
+The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+Some weights of BaichuanForSequenceClassification were not initialized from the model checkpoint at baichuan-inc/baichuan-7B and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading base model for reward model...
+0it [00:00, ?it/s]Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+1it [01:10, 70.39s/it]2it [02:32, 77.39s/it]
